@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{title}}</title>
-</head>
-<body class="page-{{body-class}}">
-    {{!-- Ancla --}}
+    <title>Integridad</title>
+<link href="css/app.css" rel="stylesheet"></head>
+<body class="page-integridad">
     <div id="top"></div>
     <!-- Modal -->
     <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -30,7 +29,6 @@
         <header class="oc-header py-1 py-md-3">
             <div class="container-fluid">
                 <div class="row justify-content-between text-center align-items-center">
-                    {{!-- Box button menu toggle --}}
                     <div class="col col-md-3 col-lg-2">
                         <button class="oc-header__box-button-menu text-left" id="btn-menu-lateral">
                             <div class="oc-header__button-menu-lateral m-auto" style="background-image: url('img/sprite-01-menu-blanco.svg');"></div>
@@ -38,12 +36,10 @@
                         </button>
                     </div>
                     
-                    {{!-- Box Brand --}}
                     <div class="col col-md-6 col-lg-8">
                         <a href="#" class="oc-header__link-brand"><img src="img/logo_ocensa_logo2.png" alt="" class="oc-header__brand"></a>
                     </div>
 
-                    {{!-- Box search menu --}}
                     <div class="col col-md-3 col-lg-2">
                         <button class="oc-button-toggle-search d-block d-md-none" data-toggle="modal" data-target="#searchModal">
                             <img src="img/icon_menu_buscador_2.svg" alt="">
@@ -62,7 +58,7 @@
                         <li class="nav-item"><a href="index.html" class="nav-link">Proyecto CONPORT</a></li>
                         <li class="nav-item"><a href="concesion-portuaria.html" class="nav-link">Concesión Portuaria</a></li>
                         <li class="nav-item"><a href="tlu2.html" class="nav-link">TLU2</a></li>
-                        <li class="nav-item"><a href="integridad.html" class="nav-link">Integridad</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Integridad</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Mangueras</a></li>
                         <li class="nav-item"><a href="terminal-maritimo-covenas.html" class="nav-link">Terminal marítimo de Coveñas</a></li>
                     </ul>
@@ -101,3 +97,12 @@
     </div>
 
     
+
+<section id="intro-hero-concesion" class="oc-intro-hero oc-slider-terminal"
+    style="background-image: url('img/cov_imag_1.jpg');">
+    <div class="container">
+        <div class="oc-intro-hero__cont d-flex align-items-center oc-h-100">
+            <h1 class="oc-intro-hero__title" data-aos="fade-right" data-aos-duration="3000">Terminal Marítimo<br>de Coveñas</h1>
+        </div>
+    </div>
+</section><script src="js/bundle.js"></script>
