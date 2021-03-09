@@ -34,3 +34,21 @@ export const itemActive = () =>{
         }
     }
 }
+
+export const desplaceMenu = () =>{
+    let nav_menu = document.querySelector('.oc-subheader nav')
+    let nav_links = nav_menu.querySelectorAll('.nav-link')
+
+    let counter = 0;
+
+    for (const item of nav_links) {
+        counter++;
+        const translate_x = 150;
+
+        if (item.classList.contains('active')) {
+            let vlr_translate_x = translate_x * counter
+            nav_menu.scrollLeft += vlr_translate_x - 140
+        }
+    }
+
+}

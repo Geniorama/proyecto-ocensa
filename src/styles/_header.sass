@@ -59,8 +59,6 @@
     border-bottom: 1px solid #d7d7d7
     .nav
         flex-wrap: nowrap
-        overflow-x: scroll
-        margin-bottom: -5px
     .nav-link
         color: #505D6C
         font-family: "roboto-bold"
@@ -160,6 +158,9 @@
             width: 100%
     .oc-menu-lateral
         width: 50%
+    .oc-subheader
+        nav
+            overflow-x: scroll
 
 // Responsive Header Mobile
 @media screen and ( max-width: 480px )
@@ -168,8 +169,10 @@
         padding-top: 4em
     .oc-mast-header
         .oc-header
+            .container-fluid
+                padding: 0
             &__brand
-                width: 100px
+                width: 110px
             .oc-button-toggle-search
                 background-color: transparent
                 border: none
@@ -177,6 +180,9 @@
                 display: inline-block !important
                 img
                     width: 40px
+            &__button-menu-lateral
+                width: 34px
+                margin-top: 3px !important
     #searchModal
         .form-control
             height: 50px
@@ -195,8 +201,11 @@
         &__box-button-menu
             width: 65px
     .oc-subheader
+        nav
+            overflow-x: scroll
         .nav-item
             .nav-link
-                min-width: 140px
+                width: 140px
+                padding-bottom: 8px
 
     

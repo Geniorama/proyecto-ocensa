@@ -6,7 +6,7 @@ import "./../node_modules/slick-carousel";
 import SmoothScroll from "smooth-scroll";
 
 //Modules
-import {menuToggle, itemActive} from "./modules/MenuEffects.js";
+import {menuToggle, itemActive, desplaceMenu} from "./modules/MenuEffects.js";
 import {buttonDisabled} from "./modules/CustomSlick.js";
 import buttonsCalendar from "./modules/ButtonsTimeline.js";
 
@@ -134,12 +134,14 @@ import "./img/icon_deslizar-h-azul.svg";
 import "./img/icono-faltante.svg";
 import "./img/logo_ocensa_logo2.png";
 import "./img/logo_ocensa_logosimbolo.png";
+import "./img/icon_menu_buscador_2.svg";
 
 
 AOS.init();
 menuToggle();
 itemActive();
 buttonsCalendar();
+desplaceMenu();
 
 var scroll = new SmoothScroll('a[href*="#"]');
 
