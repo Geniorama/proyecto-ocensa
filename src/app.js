@@ -148,6 +148,8 @@ import "./img/icon_herramienta_intervenciones_integridad_conport.svg";
 import "./img/icon_herramienta_inspeccion_integridad_conport.svg";
 import "./img/icon_herramienta_ciclos_integridad_conport.svg";
 import "./img/icon_herramienta_caminatas_integridad_conport.svg";
+import "./img/left-arrow.svg";
+import "./img/right-arrow.svg";
 
 
 AOS.init();
