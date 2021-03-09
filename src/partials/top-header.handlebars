@@ -1,0 +1,32 @@
+<header class="oc-header py-1 py-md-3">
+    <div class="container-fluid">
+        <div class="row justify-content-between text-center align-items-center">
+            {{!-- Box button menu toggle --}}
+            <div class="col col-md-3 col-lg-2">
+                <button class="oc-header__box-button-menu text-left" id="btn-menu-lateral">
+                    <div class="oc-header__button-menu-lateral m-auto"
+                        style="background-image: url('img/sprite-01-menu-blanco.svg');"></div>
+                    <p class="oc-header__title-menu-lateral m-0 text-center" id="title-button-menu">Menú</p>
+                </button>
+            </div>
+
+            {{!-- Box Brand --}}
+            <div class="col col-md-6 col-lg-8">
+                <a href="#" class="oc-header__link-brand"><img src="img/logo_ocensa_logo2.png" alt=""
+                        class="oc-header__brand"></a>
+            </div>
+
+            {{!-- Box search menu --}}
+            <div class="col col-md-3 col-lg-2">
+                <button class="oc-button-toggle-search d-block d-md-none" data-toggle="modal"
+                    data-target="#searchModal">
+                    <img src="img/icon_menu_buscador_2.svg" alt="">
+                </button>
+                <form action="" class="justify-content-end d-none d-md-flex">
+                    <input type="text" placeholder="Buscar" class="form-control oc-input-search"
+                        style="background-image: url('img/icon_menu_buscador_1.svg');">
+                </form>
+            </div>
+        </div>
+    </div>
+</header>

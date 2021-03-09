@@ -1,5 +1,12 @@
-{{!-- Importando Header --}}
-{{>partials/header title="Integridad" body-class="integridad"}}
+{{!-- Header Desktop--}}
+<div class="d-none d-md-block">
+    {{>partials/header-style-2 title="Integridad" body-class="integridad"}}
+</div>
+
+{{!-- Header Mobile--}}
+<div class="d-block d-md-none">
+    {{>partials/header title="Integridad" body-class="integridad"}}
+</div>
 
 <section id="intro-hero-concesion" class="oc-intro-hero"
     style="background-image: url('img/in-imag_1.jpg');">
@@ -9,6 +16,11 @@
         </div>
     </div>
 </section>
+
+{{!-- Bottom Header Desktop--}}
+<div class="d-none d-md-block">
+    {{>partials/bottom-header}}
+</div>
 
 <section class="container padding-section" id="introduccion">
     <div class="container">
