@@ -44,6 +44,12 @@ module.exports = {
             minify: false
         }),
 
+        new HtmlWebpackPlugin({
+            filename: 'mangueras.html',
+            template: './src/mangueras.handlebars',
+            minify: false
+        }),
+
         // CSS
         new MiniCssExtractPlugin({
             filename: 'css/app.css'
