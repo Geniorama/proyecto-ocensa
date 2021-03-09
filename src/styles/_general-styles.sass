@@ -90,6 +90,7 @@ p
         color: white
         font-size: 80px
         font-family: 'roboto-bold', sans-serif
+        text-shadow: 2px 2px 6px rgb(0 0 0 / 20%)
 
 .padding-section
     padding: 4em 0
@@ -224,6 +225,13 @@ p
     .oc-line-title
         &::before
             bottom: -15px !important
+    .slick-oc, .slick-oc__time, .slick-oc__terminal
+        .slick-dots
+            li
+                width: 8px
+                height: 8px
+                font-size: 1.7em
+
 
 @media screen and (max-width: 768px)
     .oc-line-title
