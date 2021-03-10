@@ -136,6 +136,21 @@ import "./img/logo_ocensa_logo2.png";
 import "./img/logo_ocensa_logosimbolo.png";
 import "./img/icon_menu_buscador_2.svg";
 
+import "./img/in-imag_1.jpg";
+import "./img/icon_introduccion_integridad_conport.svg";
+import "./img/imag_4_integridad_3_tecnologia_desktop.jpg";
+import "./img/icon_integridad_rol_integridad_conport.svg";
+import "./img/imag_4_integridad_2_integridad_rol_desktop.jpg";
+import "./img/in-imag_4.jpg";
+import "./img/pictograma_ocensa_conport_integridad.svg";
+import "./img/icon_herramienta_anomalias_integridad_conport.svg";
+import "./img/icon_herramienta_intervenciones_integridad_conport.svg";
+import "./img/icon_herramienta_inspeccion_integridad_conport.svg";
+import "./img/icon_herramienta_ciclos_integridad_conport.svg";
+import "./img/icon_herramienta_caminatas_integridad_conport.svg";
+import "./img/left-arrow.svg";
+import "./img/right-arrow.svg";
+
 
 AOS.init();
 menuToggle();

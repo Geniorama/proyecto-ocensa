@@ -1,0 +1,45 @@
+#introduccion
+    .oc-box-yellow
+        width: 262px
+        height: 325px
+        bottom: -30px
+        right: -50px
+#integridad-rol
+    .oc-box-yellow
+        width: 276px
+        height: 309px
+        top: -30px
+        left: -50px
+
+#integridad-2
+    .oc-box-yellow
+        width: 276px
+        height: 309px
+        bottom: -40px
+        left: -50px
+
+#video-informa
+    iframe
+        width: 100%
+        height: 630px
+    &:before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 50%
+        background-color: $primary
+        bottom: 0
+        left: 0
+        z-index: -1
+
+// Responsive integridad tablet
+@media (min-width: 480px) and (max-width: 769px)
+    #video-informa
+        iframe
+            height: 380px
+
+// Responsive integridad mobile
+@media screen and (max-width: 480px)
+    #video-informa
+        iframe
+            height: 230px
