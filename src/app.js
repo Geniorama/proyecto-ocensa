@@ -164,6 +164,8 @@ import "./img/imag_5_mangueras_2_fundamentales_mobile.jpg";
 import "./img/icon_mangueras_flexibles_mangueras_conport.svg";
 import "./img/icon_fundamentales_mangueras_conport.svg";
 import "./img/imag_5_mangueras_1_mangueras_flexibles_mobile.jpg";
+import "./img/imag_1_mobiles.jpg";
+import "./img/slide-2.jpg";
 
 AOS.init();
 menuToggle();
@@ -320,6 +322,12 @@ $(function() {
   }
   // Toggle
   $('.oc-info__tooltip').tooltip();
+
+
+  $('#btn-toggle-list').click(function(e) {
+      e.preventDefault();
+      $('#mangueras-list-2').slideToggle();
+  })  
 
   AOS.refresh();
 
