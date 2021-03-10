@@ -1,108 +1,520 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Integridad</title>
-<link href="css/app.css" rel="stylesheet"></head>
-<body class="page-integridad">
-    <div id="top"></div>
-    <!-- Modal -->
-    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog pt-5">
-        <div class="modal-content">
-        <div class="modal-body">
-            <form action="" class="justify-content-end d-flex">
-                <input type="text" placeholder="Buscar" class="form-control oc-input-search" style="background-image: url('img/icon_menu_buscador_1.svg');">
-            </form>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary">Buscar</button>
-        </div>
-        </div>
-    </div>
-    </div>
-    <div class="oc-mast-header" id="mast-header">
-        <header class="oc-header py-1 py-md-3">
-            <div class="container-fluid">
-                <div class="row justify-content-between text-center align-items-center">
-                    <div class="col col-md-3 col-lg-2">
-                        <button class="oc-header__box-button-menu text-left" id="btn-menu-lateral">
-                            <div class="oc-header__button-menu-lateral m-auto" style="background-image: url('img/sprite-01-menu-blanco.svg');"></div>
-                            <p class="oc-header__title-menu-lateral m-0 text-center" id="title-button-menu">Menú</p>
-                        </button>
-                    </div>
-                    
-                    <div class="col col-md-6 col-lg-8">
-                        <a href="#" class="oc-header__link-brand"><img src="img/logo_ocensa_logo2.png" alt="" class="oc-header__brand"></a>
-                    </div>
-
-                    <div class="col col-md-3 col-lg-2">
-                        <button class="oc-button-toggle-search d-block d-md-none" data-toggle="modal" data-target="#searchModal">
-                            <img src="img/icon_menu_buscador_2.svg" alt="">
-                        </button>
-                        <form action="" class="justify-content-end d-none d-md-flex">
-                            <input type="text" placeholder="Buscar" class="form-control oc-input-search" style="background-image: url('img/icon_menu_buscador_1.svg');">
+<div class="d-none d-md-block">
+    <!DOCTYPE html>
+    <html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Integridad</title>
+    <link href="css/app.css" rel="stylesheet"></head>
+    
+    <body class="page-integridad body-header-style-2">
+        <div id="top"></div>
+        <!-- Modal -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog pt-5">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form action="" class="justify-content-end d-flex">
+                            <input type="text" placeholder="Buscar" class="form-control oc-input-search"
+                                style="background-image: url('img/icon_menu_buscador_1.svg');">
                         </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Buscar</button>
                     </div>
                 </div>
             </div>
-        </header>
-        <div class="oc-subheader pt-0 pt-md-2 pb-0">
-            <div class="container-fluid">
+        </div>
+        <div class="oc-mast-header" id="mast-header">
+            <header class="oc-header py-1 py-md-3">
+                <div class="container-fluid">
+                    <div class="row justify-content-between text-center align-items-center">
+                        <div class="col col-md-3 col-lg-2">
+                            <button class="oc-header__box-button-menu text-left" id="btn-menu-lateral">
+                                <div class="oc-header__button-menu-lateral m-auto"
+                                    style="background-image: url('img/sprite-01-menu-blanco.svg');"></div>
+                                <p class="oc-header__title-menu-lateral m-0 text-center" id="title-button-menu">Menú</p>
+                            </button>
+                        </div>
+            
+                        <div class="col col-md-6 col-lg-8">
+                            <a href="#" class="oc-header__link-brand"><img src="img/logo_ocensa_logo2.png" alt=""
+                                    class="oc-header__brand"></a>
+                        </div>
+            
+                        <div class="col col-md-3 col-lg-2">
+                            <button class="oc-button-toggle-search d-block d-md-none" data-toggle="modal"
+                                data-target="#searchModal">
+                                <img src="img/icon_menu_buscador_2.svg" alt="">
+                            </button>
+                            <form action="" class="justify-content-end d-none d-md-flex">
+                                <input type="text" placeholder="Buscar" class="form-control oc-input-search"
+                                    style="background-image: url('img/icon_menu_buscador_1.svg');">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="oc-menu-lateral scrollbar-vertical scrollbar" id="menu-lateral">
                 <nav>
-                    <ul class="nav justify-content-between text-center">
-                        <li class="nav-item"><a href="index.html" class="nav-link">Proyecto CONPORT</a></li>
-                        <li class="nav-item"><a href="concesion-portuaria.html" class="nav-link">Concesión Portuaria</a></li>
-                        <li class="nav-item"><a href="tlu2.html" class="nav-link">TLU2</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Integridad</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Mangueras</a></li>
-                        <li class="nav-item"><a href="terminal-maritimo-covenas.html" class="nav-link">Terminal marítimo de Coveñas</a></li>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#" class="nav-link">Nuestra compañía</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Nuestra actividad</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Accionistas e inversionistas</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Ética y cumplimiento</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Compromiso con el ciudadano</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Trabaje con nosotros</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contáctenos</a></li>
                     </ul>
+    
+                    <ul class="social-nav">
+                        <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_1_facebook.svg"
+                                    alt=""></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_2_instagram.svg"
+                                    alt=""></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_3_youtube.svg"
+                                    alt=""></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_4_twitter.svg"
+                                    alt=""></a></li>
+                    </ul>
+    
+                    <ul class="nav flex-column nav-secondary">
+                        <li class="nav-item"><a href="#" class="nav-link">Mapa del sitio</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Términos y condiciones</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Política de protección de datos</a></li>
+                    </ul>
+    
+                    <img src="img/logo_ocensa_logosimbolo.png" alt="" class="oc-menu-lateral__isotipo px-3 my-4">
                 </nav>
             </div>
-        </div>
+        </div></div>
 
-        <div class="oc-menu-lateral scrollbar-vertical scrollbar" id="menu-lateral">
-            <nav>
-                <ul class="nav flex-column">
-                    <li class="nav-item"><a href="#" class="nav-link">Nuestra compañía</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Nuestra actividad</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Accionistas e inversionistas</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Ética y cumplimiento</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Compromiso con el ciudadano</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Trabaje con nosotros</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contáctenos</a></li>
-                </ul>
-
-                <ul class="social-nav">
-                    <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_1_facebook.svg" alt=""></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_2_instagram.svg" alt=""></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_3_youtube.svg" alt=""></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_4_twitter.svg" alt=""></a></li>
-                </ul>
-
-                <ul class="nav flex-column nav-secondary">
-                    <li class="nav-item"><a href="#" class="nav-link">Mapa del sitio</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Términos y condiciones</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Política de protección de datos</a></li>
-                </ul>
-
-                <img src="img/logo_ocensa_logosimbolo.png" alt="" class="oc-menu-lateral__isotipo px-3 my-4">
-            </nav>
-        </div>  
-    </div>
-
+<div class="d-block d-md-none">
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+        <title>Integridad</title>
+    </head>
+    <body class="page-integridad">
+        <div id="top"></div>
+        <!-- Modal -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog pt-5">
+            <div class="modal-content">
+            <div class="modal-body">
+                <form action="" class="justify-content-end d-flex">
+                    <input type="text" placeholder="Buscar" class="form-control oc-input-search" style="background-image: url('img/icon_menu_buscador_1.svg');">
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Buscar</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="oc-mast-header" id="mast-header">
+            <header class="oc-header py-1 py-md-3">
+                <div class="container-fluid">
+                    <div class="row justify-content-between text-center align-items-center">
+                        <div class="col col-md-3 col-lg-2">
+                            <button class="oc-header__box-button-menu text-left" id="btn-menu-lateral">
+                                <div class="oc-header__button-menu-lateral m-auto"
+                                    style="background-image: url('img/sprite-01-menu-blanco.svg');"></div>
+                                <p class="oc-header__title-menu-lateral m-0 text-center" id="title-button-menu">Menú</p>
+                            </button>
+                        </div>
+            
+                        <div class="col col-md-6 col-lg-8">
+                            <a href="#" class="oc-header__link-brand"><img src="img/logo_ocensa_logo2.png" alt=""
+                                    class="oc-header__brand"></a>
+                        </div>
+            
+                        <div class="col col-md-3 col-lg-2">
+                            <button class="oc-button-toggle-search d-block d-md-none" data-toggle="modal"
+                                data-target="#searchModal">
+                                <img src="img/icon_menu_buscador_2.svg" alt="">
+                            </button>
+                            <form action="" class="justify-content-end d-none d-md-flex">
+                                <input type="text" placeholder="Buscar" class="form-control oc-input-search"
+                                    style="background-image: url('img/icon_menu_buscador_1.svg');">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </header>        <div class="oc-subheader pt-0 pt-md-2 pb-0">
+                <div class="container-fluid">
+                    <nav>
+                        <img src="img/left-arrow.svg" alt="" class="oc-subheader__arrow left d-block d-md-none">
+                        <ul class="nav justify-content-between text-center">
+                            <li class="nav-item"><a href="index.html" class="nav-link">Proyecto CONPORT</a></li>
+                            <li class="nav-item"><a href="concesion-portuaria.html" class="nav-link">Concesión Portuaria</a></li>
+                            <li class="nav-item"><a href="tlu2.html" class="nav-link">TLU2</a></li>
+                            <li class="nav-item"><a href="integridad.html" class="nav-link">Integridad</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Mangueras</a></li>
+                            <li class="nav-item"><a href="terminal-maritimo-covenas.html" class="nav-link">Terminal marítimo de Coveñas</a></li>
+                        </ul>
+                        <img src="img/right-arrow.svg" alt="" class="oc-subheader__arrow right d-block d-md-none">
+                    </nav>
+                </div>
+            </div>
+            <div class="oc-menu-lateral scrollbar-vertical scrollbar" id="menu-lateral">
+                <nav>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#" class="nav-link">Nuestra compañía</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Nuestra actividad</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Accionistas e inversionistas</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Ética y cumplimiento</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Compromiso con el ciudadano</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Trabaje con nosotros</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contáctenos</a></li>
+                    </ul>
+    
+                    <ul class="social-nav">
+                        <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_1_facebook.svg" alt=""></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_2_instagram.svg" alt=""></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_3_youtube.svg" alt=""></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_4_twitter.svg" alt=""></a></li>
+                    </ul>
+    
+                    <ul class="nav flex-column nav-secondary">
+                        <li class="nav-item"><a href="#" class="nav-link">Mapa del sitio</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Términos y condiciones</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Política de protección de datos</a></li>
+                    </ul>
+    
+                    <img src="img/logo_ocensa_logosimbolo.png" alt="" class="oc-menu-lateral__isotipo px-3 my-4">
+                </nav>
+            </div>  
+        </div>
+    
+        
+</div>
 
-<section id="intro-hero-concesion" class="oc-intro-hero oc-slider-terminal"
-    style="background-image: url('img/cov_imag_1.jpg');">
+<section id="intro-hero-concesion" class="oc-intro-hero" style="background-image: url('img/in-imag_1.jpg');">
     <div class="container">
         <div class="oc-intro-hero__cont d-flex align-items-center oc-h-100">
-            <h1 class="oc-intro-hero__title" data-aos="fade-right" data-aos-duration="3000">Terminal Marítimo<br>de Coveñas</h1>
+            <h1 class="oc-intro-hero__title" data-aos="fade-right" data-aos-duration="3000">Integridad</h1>
         </div>
     </div>
-</section><script src="js/bundle.js"></script>
+</section>
+
+<div class="d-none d-md-block">
+    <div class="oc-subheader pt-0 pt-md-2 pb-0">
+        <div class="container-fluid">
+            <nav>
+                <img src="img/left-arrow.svg" alt="" class="oc-subheader__arrow left d-block d-md-none">
+                <ul class="nav justify-content-between text-center">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Proyecto CONPORT</a></li>
+                    <li class="nav-item"><a href="concesion-portuaria.html" class="nav-link">Concesión Portuaria</a></li>
+                    <li class="nav-item"><a href="tlu2.html" class="nav-link">TLU2</a></li>
+                    <li class="nav-item"><a href="integridad.html" class="nav-link">Integridad</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Mangueras</a></li>
+                    <li class="nav-item"><a href="terminal-maritimo-covenas.html" class="nav-link">Terminal marítimo de Coveñas</a></li>
+                </ul>
+                <img src="img/right-arrow.svg" alt="" class="oc-subheader__arrow right d-block d-md-none">
+            </nav>
+        </div>
+    </div></div>
+
+<section class="container padding-section" id="introduccion">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 oc-padding-title" data-aos="fade-left" data-aos-duration="1000">
+                <img src="img/icon_introduccion_integridad_conport.svg" alt="" class="oc-icon-section"
+                    data-aos="zoom-in" data-aos-duration="2000">
+                <h2 class="oc-subtitle oc-line-title line-yellow">Introducción</h2>
+                <p class="oc-retos__desc">Desarrollamos nuestra actividad de manera eficiente, gestionando los riesgos y
+                    amenazas mediante acciones preventivas, bajo los más altos estándares de ingeniería y mejores
+                    prácticas
+                    a nivel internacional, cumpliendo estrictamente las regulaciones y lineamientos establecidos.
+                    <br><br>
+                    Nuestra prioridad es la protección de la vida de las personas, el ambiente y los activos, y velamos
+                    por
+                    ello en cada detalle de nuestra operación. Con nuestro Programa de Integridad y Gestión de Activos,
+                    garantizamos la identificación de las amenazas, su gestión y posterior reducción, con el propósito
+                    de
+                    mitigar la probabilidad de ocurrencia de fallas del sistema.
+                </p>
+
+            </div>
+
+            <div class="col-12 col-md-6 my-md-4 my-lg-0 text-center position-relative mb-4">
+                <div class="oc-box-yellow bg-primary position-absolute" data-aos="fade-down" data-aos-duration="3000">
+                </div>
+                <img src="img/imag_4_integridad_3_tecnologia_desktop.jpg" alt="" class="img-fluid m-auto oc-cover-img"
+                    data-aos="fade-up" data-aos-duration="3000">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="padding-section oc-bg-gray" id="integridad-rol">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 my-md-4 my-lg-0 position-relative order-last order-lg-first">
+                <div class="oc-box-yellow bg-primary position-absolute" data-aos="fade-down" data-aos-duration="3000">
+                </div>
+                <img src="img/imag_4_integridad_2_integridad_rol_desktop.jpg" alt="" class="img-fluid"
+                    data-aos="fade-up" data-aos-duration="3000">
+            </div>
+            <div class="col-12 col-lg-6 mb-5 mb-lg-0 oc-padding-title order-first order-lg-last" data-aos="fade-left"
+                data-aos-duration="1000">
+                <img src="img/icon_integridad_rol_integridad_conport.svg" alt="" class="oc-icon-section"
+                    data-aos="zoom-in" data-aos-duration="2000">
+                <h2 class="oc-subtitle oc-line-title line-yellow">Integridad: su rol e importancia en la compañía</h2>
+                <p class="oc-retos__desc">Álex Malagón Usgame, nuestro profesional senior de Integridad y Corrosión nos
+                    responde 5 preguntas sobre Integridad, área a la que pertenece.
+                </p>
+                <span>ESPACIO AUDIO</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="padding-section" id="herramienta-informa">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 oc-padding-title">
+                <img src="img/icon_integridad_rol_integridad_conport.svg" alt="" class="oc-icon-section"
+                    data-aos="zoom-in" data-aos-duration="2000">
+                <h2 class="oc-subtitle oc-line-title line-yellow mb-4" data-aos="fade-right" data-aos-duration="1000">La
+                    herramienta <br> que informa</h2>
+                <div class="row">
+                    <div class="col-12 col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                        <p class="oc-retos__desc">El oleoducto está en el fondo del mar, en agua salada. En ciertos
+                            puntos esa agua podría, eventualmente, entrar al recubrimiento de la tubería y ocasionar
+                            pequeños focos de corrosión. La corrosión es un desgaste paulatino de los cuerpos metálicos
+                            por acción de agentes externos. Eso genera bacterias diminutas que carcomen la estructura,
+                            haciéndole huequitos de uno o dos centímetros de diámetro.</p>
+                    </div>
+                    <div class="col-12 col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                        <p class="oc-retos__desc">Por lo anterior, y para realizar la inspección que hacemos cada 4
+                            años, necesitábamos una tecnología más avanzada que la convencional o conocida hasta el
+                            2016. En 2017 surgió una innovación, la tecnología MFL-A Ultra, capaz de detectar anomalías
+                            muy pequeñas, de hasta un milímetro, y que a partir de los 5 milímetros las empieza a
+                            cuantificar y a dimensionar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="video-informa" class="padding-section position-relative">
+    <div class="container text-center">
+        <iframe data-aos="fade-up" data-aos-duration="1000" src="https://www.youtube.com/embed/xfNKy3acXk4?rel=0"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+</section>
+
+<section class="padding-section" id="integridad-2">
+    <div class="container">
+        <div class="row mb-5 justify-content-end">
+            <div class="col-12 col-md-6 position-relative my-md-5 my-lg-0 order-last order-lg-first">
+                <div class="oc-box-yellow bg-primary position-absolute" data-aos="fade-down" data-aos-duration="3000">
+                </div>
+                <img src="img/in-imag_4.jpg" alt="" class="img-fluid" data-aos="fade-up" data-aos-duration="3000">
+            </div>
+            <div class="col-12 col-lg-6 oc-padding-title mt-md-4 mt-lg-0 order-first order-lg-last" data-aos="fade-left"
+                data-aos-duration="1000">
+                <p class="oc-retos__desc">Existía la tecnología, pero no una herramienta bidireccional que regresara al
+                    punto de despacho (Terminal Marítimo de Coveñas, en tierra) y que se adaptara a las condiciones de
+                    nuestro tubo submarino.
+                    <br><br>
+                    “Por eso fue necesario diseñar la herramienta y verificar que se sincronizara bien con la
+                    tecnología, que tuviera la capacidad de ir hasta la TLU-2 y regresar al punto de despacho, que fuera
+                    operativa y cubriera la dimensión de nuestra tubería; que hiciera buenas lecturas de abolladuras,
+                    curvas, reducciones de diámetro, entre otras. Esas pruebas las hicimos en la casa fabricante, en
+                    Alemania. Fue creada a la medida, no existía comercialmente”, explicó Álex Malagón Usgame, nuestro
+                    profesional senior de Integridad y Corrosión.
+                    <br><br>
+                    La información que arroja la herramienta nos indica en qué momento debemos atender una amenaza;
+                    entramos, limpiamos la zona de corrosión formada con bacterias, reparamos y mitigamos ese fenómeno
+                    para que no crezca. Así nuestra compañía mantiene operativo el oleoducto para no tener problemas de
+                    integridad”, afirmó Malagón.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="padding-section" id="herramienta-permite">
+    <div class="container">
+        <div class="oc-padding-title">
+            <h2 class="oc-subtitle oc-line-title line-yellow mb-4" data-aos="fade-right" data-aos-duration="1000">La
+                herramienta <br>nos permite</h2>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="slick-oc__terminal px-4">
+                    <div class="oc-item-slick">
+                        <div class="col-12 p-0">
+                            <div class="oc-info-box text-center">
+                                <div class="oc-info-box__icon p-3">
+                                    <img src="img/icon_herramienta_anomalias_integridad_conport.svg" alt="">
+                                </div>
+
+                                <div class="oc-info-box__text oc-box-yellow p-3">
+                                    <p>Identificar anomalías muy pequeñas, de hasta 1 por 1.6 milímetros. Revela dónde
+                                        están ubicadas y qué tan críticas son.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="oc-item-slick">
+                        <div class="col-12 p-0">
+                            <div class="oc-info-box text-center">
+                                <div class="oc-info-box__icon p-3">
+                                    <img src="img/icon_herramienta_intervenciones_integridad_conport.svg" alt="">
+                                </div>
+
+                                <div class="oc-info-box__text oc-box-gray p-3">
+                                    <p>Con ese diagnóstico, priorizamos intervenciones. Expertos en ensayos no
+                                        destructivos verifican cada anomalía (van físicamente a ver el tubo por todos
+                                        sus lados, incluyendo la parte de abajo, mediante excavaciones). En los 4 años
+                                        siguientes programamos las actividades.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="oc-item-slick">
+                        <div class="col-12 p-0">
+                            <div class="oc-info-box text-center">
+                                <div class="oc-info-box__icon p-3">
+                                    <img src="img/icon_herramienta_inspeccion_integridad_conport.svg" alt="">
+                                </div>
+
+                                <div class="oc-info-box__text p-3 oc-box-yellow">
+                                    <p>La última inspección se hizo en 2018. Por ello, entre 2019 y 2021 hemos realizado
+                                        trabajos. En 2022 medimos cómo se están comportando las reparaciones al sistema.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="oc-item-slick">
+                        <div class="col-12 p-0">
+                            <div class="oc-info-box text-center">
+                                <div class="oc-info-box__icon p-3">
+                                    <img src="img/icon_herramienta_ciclos_integridad_conport.svg" alt="">
+                                </div>
+
+                                <div class="oc-info-box__text oc-box-yellow p-3">
+                                    <p>Entre los ciclos de cada 4 años, programamos unos ciclos intermedios. Otros
+                                        controles que nos indican cómo está el tubo. Son caminatas submarinas,
+                                        protección catódica (técnica para controlar la corrosión en una superficie de
+                                        metal).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="oc-item-slick">
+                        <div class="col-12 p-0">
+                            <div class="oc-info-box text-center">
+                                <div class="oc-info-box__icon p-3">
+                                    <img src="img/icon_herramienta_caminatas_integridad_conport.svg" alt="">
+                                </div>
+
+                                <div class="oc-info-box__text oc-box-gray p-3">
+                                    <p>Las caminatas pueden revelar que, por ejemplo, las corrientes marinas socavaron
+                                        el tubo y lo dejaron colgando; analizamos cómo se comportó la estructura ese
+                                        tiempo y corregimos el problema. Eso se conoce como amenaza de clima y fuerzas
+                                        externas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="oc-back-to-top d-flex justify-content-end">
+    <a href="#top" class="button-style-1 mr-2">
+        <button href="#" class="oc-back-to-top__button">
+            <img src="img/icon_subir_azul.svg" alt="">
+        </button>
+    </a>
+</div>
+
+<footer class="oc-footer py-5">
+    <div class="oc-footer__pictogram text-center">
+        <img src="./img/pictograma_ocensa_conport_integridad.svg" alt="" data-aos="zoom-in" data-aos-duration="2000">
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-8 oc-footer__left px-4 px-md-5">
+                <div class="oc-footer__search d-none d-md-block">
+                    <h3 class="mb-3">Encuentre aquí lo que busca</h3>
+                    <form action="">
+                        <input type="text" class="form-control mb-5 oc-input-search" placeholder="Buscar">
+                    </form>
+                </div>
+
+                <div class="oc-more-info mb-5">
+                    <h3 class="mb-3">¿Necesita más información?</h3>
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6">
+                            <p class="m-0">Queremos ayudarlo y estamos listos para hacerlo desde el otro lado de la pantalla.</p>
+                        </div>
+                        <div class="col-12 col-md-6 mt-4 mt-md-0">
+                            <a href="#" class="btn btn-success">Contáctenos <img src="img/icon-flecha-izq-blanca.svg" alt="" width="20px" class="ml-2"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="d-flex align-items-center mb-4 justify-content-between oc-footer__menus">
+                    <ul class="nav nav-social">
+                        <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_1_facebook.svg" alt=""></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_2_instagram.svg" alt=""></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_3_youtube.svg" alt=""></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_4_twitter.svg" alt=""></a></li>
+                    </ul>
+
+                    <ul class="nav nav-secondary justify-content-between">
+                        <li class="nav-item"><a href="#" class="nav-link link-style-2">Mapa del sitio</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link link-style-2">Términos y condiciones</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link link-style-2">Política de protección de datos</a></li>
+                    </ul>
+                </div>
+
+                <div class="oc-copyright d-flex justify-content-around">
+                    <p class="m-0">© 2021 OCENSA, Todos los derechos reservados</p>
+                    <p class="m-0">Diseño y programación <a href="#">Ekon7.com</a></p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 oc-footer__right px-5 d-none d-md-block">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a href="#" class="nav-link link-style-2">Nuestra compañía</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-style-2">Nuestra actividad</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-style-2">Accionistas e inversionistas</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-style-2">Ética y cumplimiento</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-style-2">Compromiso con el ciudadano</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-style-2">Trabaje con nosotros</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-style-2">Contáctenos</a></li>
+                </ul>
+
+                <img src="img/logo_ocensa_logosimbolo.png" alt="" class="oc-footer__isotipo px-3 mt-4">
+            </div>
+            <img src="img/logo_ocensa_logosimbolo.png" alt="" class="d-block d-md-none oc-footer__isotipo px-2 mt-4" style="margin: auto">
+        </div>
+    </div>
+</footer>
+<script src="js/bundle.js"></script></body>
+</html>

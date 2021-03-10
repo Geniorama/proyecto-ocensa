@@ -1,6 +1,6 @@
 body, html
     overflow-x: hidden
-    
+
 h1, h2, h3
     font-family: "roboto-regular", sans-serif
 
@@ -13,9 +13,9 @@ p
 .scrollbar
     &::-webkit-scrollbar
         height: 4px
-    &::-webkit-scrollbar-track 
+    &::-webkit-scrollbar-track
         border-radius: 10px
-    &::-webkit-scrollbar-thumb 
+    &::-webkit-scrollbar-thumb
         border-radius: 10px
         background: #19A501
     &-vertical
@@ -80,6 +80,7 @@ p
     background-size: cover
     height: 90vh
     margin-top: 8em
+    overflow: hidden
     .container
         height: 100%
         .row
@@ -120,7 +121,7 @@ p
     position: relative
     margin-left: 50px
 
-.slick-oc, .slick-oc__time, .slick-oc__terminal
+.slick-oc, .slick-oc__time, .slick-oc__terminal, .slick-oc__mangueras
     position: relative
     .nav-arrow
         display: flex
@@ -144,7 +145,7 @@ p
             right: -20px
         &.nav-left
             left: -20px
-    
+
     &__style-2
         .nav-arrow
             top: 13%
@@ -213,6 +214,23 @@ p
 .oc-padding-title
     padding-left: 80px
 
+.oc-bg-video
+    top: 0
+    left: 0
+    width: 100%
+    
+.oc-layer-opacity
+    &::before
+        content: ''
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        background: rgba(#000, .3)
+        z-index: 1
+    h1
+        z-index: 2
 @media screen and (max-width: 480px)
     .oc-intro-hero
         margin-top: 7em
@@ -239,7 +257,7 @@ p
         &::before
             left: 0
             top: 105%
-            bottom: -15px !important    
+            bottom: -15px !important
     .oc-padding-title
         padding-left: 2em
 

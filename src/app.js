@@ -151,6 +151,19 @@ import "./img/icon_herramienta_caminatas_integridad_conport.svg";
 import "./img/left-arrow.svg";
 import "./img/right-arrow.svg";
 
+import "./videos/mangueras-ocensa.mp4";
+import "./img/icon_boyancia_mangueras_conport.svg";
+import "./img/imag_5_mangueras_1_mangueras_flexibles_desktop.jpg";
+import "./img/imag_5_mangueras_2_fundamentales_desktop.jpg";
+import "./img/icon_mantenimiento_mangueras_conport.svg";
+import "./img/icon_inspección_mangueras_conport.svg";
+import "./img/icon_manguera_servicio_mangueras_conport.svg";
+import "./img/icon_estandares_mangueras_conport.svg";
+import "./img/icon_boyancia_mangueras_conport.svg";
+import "./img/imag_5_mangueras_2_fundamentales_mobile.jpg";
+import "./img/icon_mangueras_flexibles_mangueras_conport.svg";
+import "./img/icon_fundamentales_mangueras_conport.svg";
+import "./img/imag_5_mangueras_1_mangueras_flexibles_mobile.jpg";
 
 AOS.init();
 menuToggle();
@@ -206,14 +219,14 @@ $(function() {
     nextArrow: `<button class='nav-arrow nav-right'><img src=${ArrowRight}></button>`,
     slidesToShow: 3,
     slidesToScroll: 3,
+    dots: true,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-          infinite: true,
-          dots: true
+          infinite: true
         }
       },
       {
@@ -227,8 +240,7 @@ $(function() {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: false
+          slidesToScroll: 1
         }
       }
     ]
@@ -254,6 +266,38 @@ $(function() {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
+  $('.slick-oc__mangueras').slick({
+    prevArrow: `<button class='nav-arrow nav-left'><img src=${ArrowLeft}></button>`,
+    nextArrow: `<button class='nav-arrow nav-right'><img src=${ArrowRight}></button>`,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          infinite: true
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
         }
       },
       {
