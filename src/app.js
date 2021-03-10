@@ -166,6 +166,8 @@ import "./img/icon_fundamentales_mangueras_conport.svg";
 import "./img/imag_5_mangueras_1_mangueras_flexibles_mobile.jpg";
 import "./img/imag_1_mobiles.jpg";
 import "./img/slide-2.jpg";
+import "./img/pictograma_ocensa_conport_mangueras.svg";
+
 
 AOS.init();
 menuToggle();
