@@ -1,4 +1,111 @@
 // Section 01 Home
+.oc-sec-01
+    margin-top: 5em
+    &__desc
+        color: $t-co
+
+// Section Video Home
+.oc-video
+    background-color: $primary
+    margin-top: 8em
+    position: relative
+    padding-bottom: 6em
+    &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 290px
+        background-color: #ffffff
+    &__iframe
+        position: relative
+    &__cont-1
+        padding-left: 6em
+    &__icon
+        margin-bottom: 2em
+    .row
+        align-items: flex-end
+    &__desc
+        color: $t-co
+
+// Section Noticias
+.oc-noticias
+    padding-top: 7em
+    padding-bottom: 6em
+    &__icon
+        margin-bottom: 1.5em
+    &__cont-1
+        padding-left: 6em
+    .row
+        align-items: flex-end
+    &__cont-2
+        text-align: center
+.oc-car-noticias
+    margin-top: 4em
+    &__item
+        padding: 0 .5em
+    &__card
+        background-color: $primary
+        border: 1px solid #707070
+    &__img
+        width: 100%
+        height: 250px
+        object-fit: cover
+    &__body
+        padding: 1.5em 1em
+    &__cat
+        font-size: 15px
+        font-weight: 700
+        color: $secondary
+    &__title
+        color: $secondary
+        position: relative
+        margin-bottom: 1em
+        &::before
+            content: ''
+            position: absolute
+            bottom: -10px
+            left: 0
+            width: 40px
+            height: 3px
+            background-color: #ffffff
+    &__desc
+        color: $t-co
+    &__date
+        font-family: 'roboto-bold'
+        color: $secondary
+    &__footer
+        justify-content: space-between
+    &__btn
+        justify-content: flex-end
+        padding-right: 1em
+        color: $secondary
+        font-family: 'roboto-bold'
+        align-items: center !important
+        transition: $tr
+        &:hover
+            text-decoration: none
+            color: $t-co
+        img
+            margin-left: .5em
+    .slick-dots
+        margin-top: .5em
+        display: flex
+        justify-content: center
+        align-items: center
+        li
+            width: 10px
+            height: 10px
+            margin: 0 .3em
+            font-size: 2.1em
+            color: #dfe4e7
+            cursor: pointer
+        .slick-active
+            color: $primary
+        button
+            display: none
+
 .oc-slider
     &__cont
         position: relative
@@ -52,12 +159,17 @@
 
 // Section 03 Home
 .oc-galery
+    margin-top: 5em
     .nav-arrow
         top: calc( 50% - 35px )
     &__img
         width: 100%
-        margin-bottom: 2em
-        padding: 1em
+        padding: 0 1em
+        margin-bottom: .5em 
+    &__desc
+        padding: 0 1em
+        margin-bottom: 1em
+        color: $t-co
 
 // Section 04  Home
 .oc-time
@@ -83,11 +195,6 @@
 
 // Section 05 Home
 .oc-component
-    background-color: #F2F4F5
-    .oc-back-to-top__button
-        background-color: #F2F4F5
-        &::before
-            background-color: #F2F4F5
     &__cont-1
         padding-left: 8em
     &__icon
@@ -159,7 +266,7 @@
     &__img
         height: 500px
         width: auto
-    &__tooltip
+    &__tooltip, &__modal
         position: absolute
         width: 30px
         height: 30px
@@ -233,6 +340,12 @@
         text-align: left
         margin: 0
         font-family: 'roboto-c-bold'
+    &__item-title-p
+        color: $p-co
+        text-align: left
+        margin-bottom: .6em
+        font-family: 'roboto-c-bold'
+        font-size: 20px
     &__item-btn
         background-color: $p-co
         text-align: center
@@ -262,8 +375,37 @@
 .bs-tooltip-right .arrow::before
     border-right-color: #fff
     box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.13)
-
-        
+.oc-modal
+    &__cont
+        position: relative
+        padding-bottom: 2em
+    &__close
+        right: 10px
+        top: 0
+        position: absolute
+        z-index: 1
+        font-size: 2.5em
+    &__title
+        font-family: 'roboto-bold'
+        color: $p-co
+        font-size: 20px
+        margin-bottom: 1em
+    &__desc
+        color: $t-co
+        margin-bottom: 0
+    &__btn
+        background-color: $p-co
+        color: #fff
+        padding: .5em 2em
+        border-radius: 20px
+    &__cont-btn
+        margin-top: 2em
+    &__subtitle
+        color: $p-co
+        margin-bottom: 0
+    &__line
+        margin: .5em 0 !important
+    
 // Section timeline
 .oc-time__func
     z-index: 2
@@ -372,7 +514,27 @@
     .slick-slide
         img
             width: 100px
-        
+
+//Section Hitos
+.oc-hitos
+    padding-bottom: 6em
+    &__cont-1
+        padding-left: 6em
+        margin-bottom: 4em
+    &__date, &__title
+        color: $secondary
+        font-weight: bold
+    &__title
+        margin-bottom: 0
+    .oc-info-box
+        height: 530px
+        &__icon
+            height: 35%
+            display: flex
+            align-items: center
+        &__text
+            height: 65%
+
 //Responsive
 @media (min-width: 480px) and ( max-width: 769px)
     .oc-time
@@ -470,6 +632,28 @@
             &::before
                 bottom: -10px
                 left: 0
+    .oc-sec-01__desc
+        margin-top: 1.5em
+    .oc-video
+        margin-top: 4em
+        &::before
+            height: 100px
+        iframe
+            height: 350px
+        &__cont-1
+            padding: 1em
+    .oc-noticias
+        &__cont-1
+            padding: 1em
+    .oc-hitos
+        &__cont-1
+            padding: 1em
+        .oc-info-box
+            height: 640px
+    .oc-galery
+        .nav-arrow
+            top: auto
+            bottom: -30px
 .oc-deslice
     transform: translateY(50px)
     z-index: 3
