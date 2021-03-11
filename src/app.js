@@ -151,6 +151,7 @@ import "./img/icono-hitos-06.svg";
 import "./img/icono-hitos-07.svg";
 import "./img/icono-hitos-08.svg";
 import "./img/icono-hitos-09.svg";
+import "./img/pictograma_home_concha.svg";
 
 import "./img/in-imag_1.jpg";
 import "./img/icon_introduccion_integridad_conport.svg";
@@ -201,6 +202,11 @@ $(function() {
     } else {
       $('#mast-header').removeClass('sticky-header')
     }
+  });
+
+  $('.oc-intro__car').slick({
+    dots: false,
+    arrows: false
   });
 
   $('.slick-oc').slick({
