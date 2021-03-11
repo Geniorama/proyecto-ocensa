@@ -135,6 +135,22 @@ import "./img/icono-faltante.svg";
 import "./img/logo_ocensa_logo2.png";
 import "./img/logo_ocensa_logosimbolo.png";
 import "./img/icon_menu_buscador_2.svg";
+import "./img/icono-home-01.svg";
+import "./img/icono-video.svg";
+import "./img/icono-noticias.svg";
+import "./img/flecha-noticias.svg";
+import "./img/ejemplo-noticia.png";
+import "./img/info-02.svg";
+import "./img/icon-hitos.svg";
+import "./img/icono-hitos-01.svg";
+import "./img/icono-hitos-02.svg";
+import "./img/icono-hitos-03.svg";
+import "./img/icono-hitos-04.svg";
+import "./img/icono-hitos-05.svg";
+import "./img/icono-hitos-06.svg";
+import "./img/icono-hitos-07.svg";
+import "./img/icono-hitos-08.svg";
+import "./img/icono-hitos-09.svg";
 
 
 AOS.init();
@@ -256,11 +272,48 @@ $(function() {
     nextArrow: `<button class='nav-arrow nav-right'><img src=${ArrowRight2}></button>`
   });
 
+  $('.oc-car-noticias').slick({
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
   if($('.slick-oc__style-2')){
     buttonDisabled();
   }
   // Toggle
   $('.oc-info__tooltip').tooltip();
+
+  // Modal infografía
+  $('.oc-info__modal').modal({
+    show: false,
+  });
 
   AOS.refresh();
 
