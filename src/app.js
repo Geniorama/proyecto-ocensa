@@ -168,7 +168,7 @@ import "./img/icon_herramienta_caminatas_integridad_conport.svg";
 import "./img/left-arrow.svg";
 import "./img/right-arrow.svg";
 
-import "./videos/mangueras-ocensa.mp4";
+
 import "./img/icon_boyancia_mangueras_conport.svg";
 import "./img/imag_5_mangueras_1_mangueras_flexibles_desktop.jpg";
 import "./img/imag_5_mangueras_2_fundamentales_desktop.jpg";
@@ -185,6 +185,9 @@ import "./img/imag_1_mobiles.jpg";
 import "./img/slide-2.jpg";
 import "./img/pictograma_ocensa_conport_mangueras.svg";
 
+// Videos
+import "./videos/mangueras-ocensa.mp4";
+import "./videos/primer-puesto-en-la-categoria-midstream-en-los-premios-de-excelencia-de-ecopetrol.mp4";
 
 AOS.init();
 menuToggle();
@@ -309,7 +312,7 @@ $(function() {
     nextArrow: `<button class='nav-arrow nav-right'><img src=${ArrowRight}></button>`,
     slidesToShow: 4,
     slidesToScroll: 4,
-    dots: false,
+    dots: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -382,7 +385,14 @@ $(function() {
 
   $('#btn-toggle-list').click(function(e) {
       e.preventDefault();
-      $('#mangueras-list-2').slideToggle();
+      $('#mangueras-list-2').slideToggle('fast', function() {
+        if ($('#mangueras-list-2').css('display') == 'none') {
+          $('#btn-toggle-list span').text('Ver más')
+        }
+        else {
+            $('#btn-toggle-list span').text('Ver menos')
+        }
+      });
   })  
   // Modal infografía
   $('.oc-info__modal').modal({
