@@ -17,11 +17,11 @@
         height: 309px
         bottom: -40px
         left: -50px
+.oc-video-yt
+    width: 100%
+    height: 630px
 
 #video-informa
-    iframe
-        width: 100%
-        height: 630px
     &:before
         content: ''
         position: absolute
@@ -34,12 +34,10 @@
 
 // Responsive integridad tablet
 @media (min-width: 480px) and (max-width: 769px)
-    #video-informa
-        iframe
-            height: 380px
+    .oc-video-yt
+        height: 380px
 
 // Responsive integridad mobile
 @media screen and (max-width: 480px)
-    #video-informa
-        iframe
-            height: 230px
+    .oc-video-yt
+        height: 230px

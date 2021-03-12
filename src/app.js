@@ -186,10 +186,10 @@ import "./img/slide-2.jpg";
 import "./img/pictograma_ocensa_conport_mangueras.svg";
 import "./img/icono-noticias.svg";
 import "./img/arrow-news.svg";
+import "./img/02-icon_ocensa_home_noticias.svg";
 
 // Videos
 import "./videos/mangueras-ocensa.mp4";
-import "./videos/primer-puesto-en-la-categoria-midstream-en-los-premios-de-excelencia-de-ecopetrol.mp4";
 
 AOS.init();
 menuToggle();

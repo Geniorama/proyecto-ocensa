@@ -1,1 +1,245 @@
-<head><link href="css/app.css" rel="stylesheet"></head><script src="js/bundle.js"></script>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Archive</title>
+<link href="css/app.css" rel="stylesheet"></head>
+<body class="page-archive-news">
+    <div id="top"></div>
+    <!-- Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog pt-5">
+        <div class="modal-content">
+        <div class="modal-body">
+            <form action="" class="justify-content-end d-flex">
+                <input type="text" placeholder="Buscar" class="form-control oc-input-search" style="background-image: url('img/icon_menu_buscador_1.svg');">
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Buscar</button>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="oc-mast-header" id="mast-header">
+        <header class="oc-header py-1 py-md-3">
+            <div class="container-fluid">
+                <div class="row justify-content-between text-center align-items-center">
+                    <div class="col col-md-3 col-lg-2">
+                        <button class="oc-header__box-button-menu text-left" id="btn-menu-lateral">
+                            <div class="oc-header__button-menu-lateral m-auto"
+                                style="background-image: url('img/sprite-01-menu-blanco.svg');"></div>
+                            <p class="oc-header__title-menu-lateral m-0 text-center" id="title-button-menu">Menú</p>
+                        </button>
+                    </div>
+        
+                    <div class="col col-md-6 col-lg-8">
+                        <a href="#" class="oc-header__link-brand"><img src="img/logo_ocensa_logo2.png" alt=""
+                                class="oc-header__brand"></a>
+                    </div>
+        
+                    <div class="col col-md-3 col-lg-2">
+                        <button class="oc-button-toggle-search d-block d-md-none" data-toggle="modal"
+                            data-target="#searchModal">
+                            <img src="img/icon_menu_buscador_2.svg" alt="">
+                        </button>
+                        <form action="" class="justify-content-end d-none d-md-flex">
+                            <input type="text" placeholder="Buscar" class="form-control oc-input-search"
+                                style="background-image: url('img/icon_menu_buscador_1.svg');">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>        <div class="oc-subheader pt-0 pt-md-2 pb-0">
+            <div class="container-fluid">
+                <nav>
+                    <img src="img/left-arrow.svg" alt="" class="oc-subheader__arrow left d-block d-md-none">
+                    <ul class="nav justify-content-between text-center">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Proyecto CONPORT</a></li>
+                        <li class="nav-item"><a href="concesion-portuaria.html" class="nav-link">Concesión Portuaria</a></li>
+                        <li class="nav-item"><a href="tlu2.html" class="nav-link">TLU2</a></li>
+                        <li class="nav-item"><a href="integridad.html" class="nav-link">Integridad</a></li>
+                        <li class="nav-item"><a href="mangueras.html" class="nav-link">Mangueras</a></li>
+                        <li class="nav-item"><a href="terminal-maritimo-covenas.html" class="nav-link">Terminal marítimo de Coveñas</a></li>
+                    </ul>
+                    <img src="img/right-arrow.svg" alt="" class="oc-subheader__arrow right d-block d-md-none">
+                </nav>
+            </div>
+        </div>
+        <div class="oc-menu-lateral scrollbar-vertical scrollbar" id="menu-lateral">
+            <nav>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a href="#" class="nav-link">Nuestra compañía</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Nuestra actividad</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Accionistas e inversionistas</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Ética y cumplimiento</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Compromiso con el ciudadano</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Trabaje con nosotros</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contáctenos</a></li>
+                </ul>
+
+                <ul class="social-nav">
+                    <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_1_facebook.svg" alt=""></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_3_youtube.svg" alt=""></a></li>
+                </ul>
+
+                <ul class="nav flex-column nav-secondary">
+                    <li class="nav-item"><a href="#" class="nav-link">Mapa del sitio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Términos y condiciones</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Política de protección de datos</a></li>
+                </ul>
+
+                <img src="img/logo_ocensa_logosimbolo.png" alt="" class="oc-menu-lateral__isotipo px-3 my-4">
+            </nav>
+        </div>  
+    </div>
+
+    
+
+<section class="oc-news-sub">
+    <div class="container">
+        <div class="oc-news-sub__cont row">
+            <img src="./img/icono-noticias.svg" alt="" class="oc-news-sub__icon">
+            <h1 class="oc-news-sub__title">Noticias<br> CONPORT</h1>
+        </div>
+    </div>
+</section>
+
+<section class="oc-news-content">
+    <div class="oc-news-content__body">
+        <img src="img/slider-home.jpg" alt="" class="oc-news-content__img-dest">
+        <div class="oc-news-content__info">
+            <span class="oc-news-content__date">02/05/2021</span>
+            <span class="oc-news-content__cat">INTEGRIDAD</span>
+            <h2 class="oc-news-content__title">Lorem ipsum dolor sit amet, consectetuer adipiscing</h2>
+            <p class="oc-news-content__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            <p class="oc-news-content__desc-02">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
+            <p class="oc-news-content__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            <p class="oc-news-content__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            <div class="oc-news-content__cont-btn">
+                <a href="#" class="oc-news-content__btn"><span>⟵</span>  Regresar a la sección</a>
+            </div>
+        </div>
+    </div>
+    <hr class="oc-news-content__line">
+    <div class="oc-news-content__body">
+        <img src="img/slider-home.jpg" alt="" class="oc-news-content__img-dest">
+        <div class="oc-news-content__info">
+            <span class="oc-news-content__date">02/05/2021</span>
+            <span class="oc-news-content__cat">INTEGRIDAD</span>
+            <h2 class="oc-news-content__title">Lorem ipsum dolor sit amet, consectetuer adipiscing</h2>
+            <p class="oc-news-content__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            <p class="oc-news-content__desc-02">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
+            <p class="oc-news-content__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            <p class="oc-news-content__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            <div class="oc-news-content__cont-btn">
+                <a href="#" class="oc-news-content__btn"><span>⟵</span>  Regresar a la sección</a>
+            </div>
+        </div>
+    </div>
+    <hr class="oc-news-content__line">
+    <div class="oc-news-content__body">
+        <img src="img/slider-home.jpg" alt="" class="oc-news-content__img-dest">
+        <div class="oc-news-content__info">
+            <span class="oc-news-content__date">02/05/2021</span>
+            <span class="oc-news-content__cat">INTEGRIDAD</span>
+            <h2 class="oc-news-content__title">Lorem ipsum dolor sit amet, consectetuer adipiscing</h2>
+            <p class="oc-news-content__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            <p class="oc-news-content__desc-02">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
+            <p class="oc-news-content__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            <p class="oc-news-content__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            <div class="oc-news-content__cont-btn">
+                <a href="#" class="oc-news-content__btn"><span>⟵</span>  Regresar a la sección</a>
+            </div>
+        </div>
+    </div>
+    <hr class="oc-news-content__line">
+    <div class="oc-news-content__pag">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link oc-arrow" href="#"><span class="mr-2">⟵</span> Noticias recientes</a></li>
+                <li class="page-item"><a class="page-link number" href="#">1</a></li>
+                <li class="page-item"><a class="page-link number" href="#">2</a></li>
+                <li class="page-item"><a class="page-link number" href="#">3</a></li>
+                <li class="page-item"><a class="page-link number" href="#">4</a></li>
+                <li class="page-item"><a class="page-link oc-arrow" href="#">Noticias anteriores <span class="ml-2">⟶</span></a></li>
+            </ul>
+        </nav>
+    </div>
+</section>
+
+<div class="oc-back-to-top d-flex justify-content-end">
+    <a href="#top" class="button-style-1 mr-2">
+        <button href="#" class="oc-back-to-top__button">
+            <img src="img/icon_subir_azul.svg" alt="">
+        </button>
+    </a>
+</div>
+
+<footer class="oc-footer py-5">
+    <div class="oc-footer__pictogram text-center">
+        <img src="./img/pictograma_home_concha.svg" alt="" data-aos="zoom-in" data-aos-duration="2000">
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-8 oc-footer__left px-4 px-md-5">
+                <div class="oc-footer__search d-none d-md-block">
+                    <h3 class="mb-3">Encuentre aquí lo que busca</h3>
+                    <form action="">
+                        <input type="text" class="form-control mb-5 oc-input-search" placeholder="Buscar">
+                    </form>
+                </div>
+
+                <div class="oc-more-info mb-5">
+                    <h3 class="mb-3">¿Necesita más información?</h3>
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6">
+                            <p class="m-0">Queremos ayudarlo y estamos listos para hacerlo desde el otro lado de la pantalla.</p>
+                        </div>
+                        <div class="col-12 col-md-6 mt-4 mt-md-0">
+                            <a href="#" class="btn btn-success">Contáctenos <img src="img/icon-flecha-izq-blanca.svg" alt="" width="20px" class="ml-2"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="d-flex align-items-center mb-4 justify-content-between oc-footer__menus">
+                    <ul class="nav nav-social">
+                        <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_1_facebook.svg" alt=""></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_3_youtube.svg" alt=""></a></li>
+                    </ul>
+
+                    <ul class="nav nav-secondary justify-content-between">
+                        <li class="nav-item"><a href="#" class="nav-link link-style-2">Mapa del sitio</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link link-style-2">Términos y condiciones</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link link-style-2">Política de protección de datos</a></li>
+                    </ul>
+                </div>
+
+                <div class="oc-copyright d-flex justify-content-around">
+                    <p class="m-0">© 2021 OCENSA, Todos los derechos reservados</p>
+                    <p class="m-0">Diseño y programación <a href="#">Ekon7.com</a></p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 oc-footer__right px-5 d-none d-md-block">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a href="#" class="nav-link link-style-2">Nuestra compañía</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-style-2">Nuestra actividad</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-style-2">Accionistas e inversionistas</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-style-2">Ética y cumplimiento</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-style-2">Compromiso con el ciudadano</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-style-2">Trabaje con nosotros</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-style-2">Contáctenos</a></li>
+                </ul>
+
+                <img src="img/logo_ocensa_logosimbolo.png" alt="" class="oc-footer__isotipo px-3 mt-4">
+            </div>
+            <img src="img/logo_ocensa_logosimbolo.png" alt="" class="d-block d-md-none oc-footer__isotipo px-2 mt-4" style="margin: auto">
+        </div>
+    </div>
+</footer>
+<script src="js/bundle.js"></script></body>
+</html>
