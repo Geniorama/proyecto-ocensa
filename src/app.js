@@ -184,6 +184,8 @@ import "./img/imag_5_mangueras_1_mangueras_flexibles_mobile.jpg";
 import "./img/imag_1_mobiles.jpg";
 import "./img/slide-2.jpg";
 import "./img/pictograma_ocensa_conport_mangueras.svg";
+import "./img/icono-noticias.svg";
+import "./img/arrow-news.svg";
 
 
 AOS.init();
