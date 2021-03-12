@@ -187,6 +187,8 @@ import "./img/pictograma_ocensa_conport_mangueras.svg";
 import "./img/icono-noticias.svg";
 import "./img/arrow-news.svg";
 import "./img/02-icon_ocensa_home_noticias.svg";
+import "./img/06-icon_ocenza_integridad_geotubo.svg";
+import "./img/icono-ver-menos.svg";
 
 // Videos
 import "./videos/mangueras-ocensa.mp4";
@@ -335,7 +337,8 @@ $(function() {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          infinite: false
         }
       }
     ]
@@ -389,10 +392,12 @@ $(function() {
       e.preventDefault();
       $('#mangueras-list-2').slideToggle('fast', function() {
         if ($('#mangueras-list-2').css('display') == 'none') {
-          $('#btn-toggle-list span').text('Ver más')
+          $('#btn-toggle-list span').text('Ver más');
+          $('#btn-toggle-list img').attr('src', 'img/plus_1.svg');
         }
         else {
-            $('#btn-toggle-list span').text('Ver menos')
+            $('#btn-toggle-list span').text('Ver menos');
+            $('#btn-toggle-list img').attr('src', 'img/icono-ver-menos.svg');
         }
       });
   })  
