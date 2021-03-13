@@ -26,46 +26,50 @@
     </div>
     </div>
     <div class="oc-mast-header" id="mast-header">
-        <header class="oc-header py-3">
+        <header class="oc-header py-1 py-md-3">
             <div class="container-fluid">
                 <div class="row justify-content-between text-center align-items-center">
                     <div class="col col-md-3 col-lg-2">
                         <button class="oc-header__box-button-menu text-left" id="btn-menu-lateral">
-                            <div class="oc-header__button-menu-lateral m-auto" style="background-image: url('img/sprite-01-menu-blanco.svg');"></div>
+                            <div class="oc-header__button-menu-lateral m-auto"
+                                style="background-image: url('img/sprite-01-menu-blanco.svg');"></div>
                             <p class="oc-header__title-menu-lateral m-0 text-center" id="title-button-menu">Menú</p>
                         </button>
                     </div>
-                    
+        
                     <div class="col col-md-6 col-lg-8">
-                        <a href="#" class="oc-header__link-brand"><img src="img/logo_ocensa_logo2.png" alt="" class="oc-header__brand"></a>
+                        <a href="#" class="oc-header__link-brand"><img src="img/logo_ocensa_logo2.png" alt=""
+                                class="oc-header__brand"></a>
                     </div>
-
+        
                     <div class="col col-md-3 col-lg-2">
-                        <button class="oc-button-toggle-search d-block d-md-none" data-toggle="modal" data-target="#searchModal">
-                            <img src="img/icon_menu_button-search-mobile.svg" alt="">
+                        <button class="oc-button-toggle-search d-block d-md-none" data-toggle="modal"
+                            data-target="#searchModal">
+                            <img src="img/icon_menu_buscador_2.svg" alt="">
                         </button>
                         <form action="" class="justify-content-end d-none d-md-flex">
-                            <input type="text" placeholder="Buscar" class="form-control oc-input-search" style="background-image: url('img/icon_menu_buscador_1.svg');">
+                            <input type="text" placeholder="Buscar" class="form-control oc-input-search"
+                                style="background-image: url('img/icon_menu_buscador_1.svg');">
                         </form>
                     </div>
                 </div>
             </div>
-        </header>
-        <div class="oc-subheader pt-2 pb-0">
+        </header>        <div class="oc-subheader pt-0 pt-md-2 pb-0">
             <div class="container-fluid">
                 <nav>
-                    <ul class="nav justify-content-between scrollbar text-center">
+                    <img src="img/left-arrow.svg" alt="" class="oc-subheader__arrow left d-block d-md-none">
+                    <ul class="nav justify-content-between text-center">
                         <li class="nav-item"><a href="index.html" class="nav-link">Proyecto CONPORT</a></li>
                         <li class="nav-item"><a href="concesion-portuaria.html" class="nav-link">Concesión Portuaria</a></li>
                         <li class="nav-item"><a href="tlu2.html" class="nav-link">TLU2</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Integridad</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Mangueras</a></li>
+                        <li class="nav-item"><a href="integridad.html" class="nav-link">Integridad</a></li>
+                        <li class="nav-item"><a href="mangueras.html" class="nav-link">Mangueras</a></li>
                         <li class="nav-item"><a href="terminal-maritimo-covenas.html" class="nav-link">Terminal marítimo de Coveñas</a></li>
                     </ul>
+                    <img src="img/right-arrow.svg" alt="" class="oc-subheader__arrow right d-block d-md-none">
                 </nav>
             </div>
         </div>
-
         <div class="oc-menu-lateral scrollbar-vertical scrollbar" id="menu-lateral">
             <nav>
                 <ul class="nav flex-column">
@@ -80,9 +84,7 @@
 
                 <ul class="social-nav">
                     <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_1_facebook.svg" alt=""></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_2_instagram.svg" alt=""></a></li>
                     <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_3_youtube.svg" alt=""></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_4_twitter.svg" alt=""></a></li>
                 </ul>
 
                 <ul class="nav flex-column nav-secondary">
@@ -98,14 +100,11 @@
 
     
 
-<section id="intro-hero-concesion" class="oc-intro-hero oc-slider-terminal" style="background-image: url('img/cov_imag_1.jpg');">
+<section id="intro-hero-concesion" class="oc-intro-hero"
+    style="background-image: url('img/cov_imag_1.jpg');">
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <h1 class="oc-intro-hero__title" data-aos="fade-right" data-aos-duration="3000">Terminal<br>Coveñas</h1>
-            </div>
-            <div class="col-12 col-md-6">
-            </div>
+        <div class="oc-intro-hero__cont d-flex align-items-center oc-h-100">
+            <h1 class="oc-intro-hero__title" data-aos="fade-right" data-aos-duration="3000">Terminal Marítimo<br>de Coveñas</h1>
         </div>
     </div>
 </section>
@@ -114,9 +113,11 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-5 oc-padding-title">
-                <img src="img/28-icon_ocenza_terminal_covenas_datos_interes.svg" alt="" class="oc-icon-section" data-aos="fade-in" data-aos-duration="2000">
+                <img src="img/28-icon_ocenza_terminal_covenas_datos_interes.svg" alt="" class="oc-icon-section"
+                    data-aos="fade-in" data-aos-duration="2000">
                 <h2 class="mt-4 oc-subtitle line-yellow oc-line-title">Terminal de Coveñas, datos de interés</h2>
-                <p class="oc-text-color-dark">Se construyó en el año 199X gracias al primer contrato entre la ANI y Ocensa, que data de 1996.</p>
+                <p class="oc-text-color-dark">Se construyó en el año 199X gracias al primer contrato entre la ANI y
+                    Ocensa, que data de 1996.</p>
             </div>
             <div class="col-12 col-md-7 position-relative">
                 <img src="img/cov_imag_2.jpg" alt="" class="img-fluid" data-aos="fade-right" data-aos-duration="1000">
@@ -137,7 +138,10 @@
                         </div>
 
                         <div class="oc-info-box__text oc-box-yellow p-3">
-                            <p>Ubicado en el municipio de Coveñas, departamento de Sucre, en la región Caribe. Esta zona, antes de 1966, formaba parte del Bolívar Grande. Entonces su capital era Cartagena de Indias, hoy es Sincelejo. Se encuentra entre las localidades de Tolú (Sucre) y San Antero (Córdoba).</p>
+                            <p>Ubicado en el municipio de Coveñas, departamento de Sucre, en la región Caribe. Esta
+                                zona, antes de 1966, formaba parte del Bolívar Grande. Entonces su capital era Cartagena
+                                de Indias, hoy es Sincelejo. Se encuentra entre las localidades de Tolú (Sucre) y San
+                                Antero (Córdoba).</p>
                         </div>
                     </div>
                 </div>
@@ -165,7 +169,9 @@
                         </div>
 
                         <div class="oc-info-box__text p-3 oc-box-yellow">
-                            <p>Es el puerto petrolero más importante de Colombia, porque por aquí salen los mayores volúmenes de exportación. Operan tres terminales: el Terminal Marítimo de Coveñas, de Ocensa; el de Oleoducto de Colombia (ODC), y el de Cenit, operado por Ecopetrol.</p>
+                            <p>Es el puerto petrolero más importante de Colombia, porque por aquí salen los mayores
+                                volúmenes de exportación. Operan tres terminales: el Terminal Marítimo de Coveñas, de
+                                Ocensa; el de Oleoducto de Colombia (ODC), y el de Cenit, operado por Ecopetrol.</p>
                         </div>
                     </div>
                 </div>
@@ -179,7 +185,9 @@
                         </div>
 
                         <div class="oc-info-box__text oc-box-yellow p-3">
-                            <p>Recibe petróleo del segmento 3 del ducto que viene de las estaciones de Vasconia y Caucasia. También recibe de ODC, de Caño Limón y del Oleoducto Bicentenario. Transfiere crudo, o sea, lo pasa a los otros terminales.</p>
+                            <p>Recibe petróleo del segmento 3 del ducto que viene de las estaciones de Vasconia y
+                                Caucasia. También recibe de ODC, de Caño Limón y del Oleoducto Bicentenario. Transfiere
+                                crudo, o sea, lo pasa a los otros terminales.</p>
                         </div>
                     </div>
                 </div>
@@ -193,7 +201,8 @@
                         </div>
 
                         <div class="oc-info-box__text oc-box-gray p-3">
-                            <p>Aquí llegan los crudos de diferente calidad: pesados, livianos y de mezcla. Viajan en el ducto uno detrás del otro, sin mezclarse entre sí; la técnica se conoce como bacheo.</p>
+                            <p>Aquí llegan los crudos de diferente calidad: pesados, livianos y de mezcla. Viajan en el
+                                ducto uno detrás del otro, sin mezclarse entre sí; la técnica se conoce como bacheo.</p>
                         </div>
                     </div>
                 </div>
@@ -207,7 +216,8 @@
                         </div>
 
                         <div class="oc-info-box__text p-3 oc-box-yellow">
-                            <p>Nuestra Terminal cuenta con 7 tanques de almacenamiento con capacidad para 350.000, 420.000 y 600.000 barriles. </p>
+                            <p>Nuestra Terminal cuenta con 7 tanques de almacenamiento con capacidad para 350.000,
+                                420.000 y 600.000 barriles. </p>
                         </div>
                     </div>
                 </div>
@@ -221,7 +231,9 @@
                         </div>
 
                         <div class="oc-info-box__text oc-box-yellow p-3">
-                            <p>(Un barril es un volumen igual a 42 galones, y cada galón equivale a tres litros con siete mil ochocientos cincuenta y tres diezmilésimas de litro (3.7853) o 9.702,0 pulgadas cúbicas).</p>
+                            <p>(Un barril es un volumen igual a 42 galones, y cada galón equivale a tres litros con
+                                siete mil ochocientos cincuenta y tres diezmilésimas de litro (3.7853) o 9.702,0
+                                pulgadas cúbicas).</p>
                         </div>
                     </div>
                 </div>
@@ -235,7 +247,8 @@
                         </div>
 
                         <div class="oc-info-box__text oc-box-gray p-3">
-                            <p>Todo este petróleo es de nuestros clientes, no de Ocensa; nosotros lo recibimos y lo transportamos hasta el buque que nos indiquen.</p>
+                            <p>Todo este petróleo es de nuestros clientes, no de Ocensa; nosotros lo recibimos y lo
+                                transportamos hasta el buque que nos indiquen.</p>
                         </div>
                     </div>
                 </div>
@@ -249,7 +262,8 @@
                         </div>
 
                         <div class="oc-info-box__text p-3 oc-box-yellow">
-                            <p>Desde este puerto se les inyecta petróleo a buques de diferentes tamaños: con capacidad para 500.000, 750.000, 1.000.000 y hasta 2.000.000 de barriles.</p>
+                            <p>Desde este puerto se les inyecta petróleo a buques de diferentes tamaños: con capacidad
+                                para 500.000, 750.000, 1.000.000 y hasta 2.000.000 de barriles.</p>
                         </div>
                     </div>
                 </div>
@@ -263,7 +277,10 @@
                         </div>
 
                         <div class="oc-info-box__text oc-box-yellow p-3">
-                            <p>El último tramo del oleoducto, que viene desde Casanare, sale de esta terminal y recorre 12 kilómetros hasta el PLEM, ubicado debajo de la TLU-2. Está protegido por concreto debajo del agua. Unas mangueras llevan el crudo a la monoboya y otras lo conducen a los barcos.</p>
+                            <p>El último tramo del oleoducto, que viene desde Casanare, sale de esta terminal y recorre
+                                12 kilómetros hasta el PLEM, ubicado debajo de la TLU-2. Está protegido por concreto
+                                debajo del agua. Unas mangueras llevan el crudo a la monoboya y otras lo conducen a los
+                                barcos.</p>
                         </div>
                     </div>
                 </div>
@@ -277,7 +294,9 @@
                         </div>
 
                         <div class="oc-info-box__text oc-box-gray p-3">
-                            <p>¿Por qué almacenamos? Para regular las entradas y las salidas del crudo, y para prestarles el servicio de acopio a los clientes, quienes negocian teniendo en cuenta los precios del mercado, entre otras razones.</p>
+                            <p>¿Por qué almacenamos? Para regular las entradas y las salidas del crudo, y para
+                                prestarles el servicio de acopio a los clientes, quienes negocian teniendo en cuenta los
+                                precios del mercado, entre otras razones.</p>
                         </div>
                     </div>
                 </div>
@@ -291,7 +310,8 @@
                         </div>
 
                         <div class="oc-info-box__text p-3 oc-box-yellow">
-                            <p>Aquí contamos con una capacidad de exportación de 1.080.000 barriles diarios; más de 25 millones al mes.</p>
+                            <p>Aquí contamos con una capacidad de exportación de 1.080.000 barriles diarios; más de 25
+                                millones al mes.</p>
                         </div>
                     </div>
                 </div>
@@ -305,7 +325,8 @@
                         </div>
 
                         <div class="oc-info-box__text oc-box-yellow p-3">
-                            <p>2020: por la TLU-2 se atendieron 158 buquetanques; por la TLU-1, 2, y por la TLU-3, 8. Total atendidos desde 1997: 3274.</p>
+                            <p>2020: por la TLU-2 se atendieron 158 buquetanques; por la TLU-1, 2, y por la TLU-3, 8.
+                                Total atendidos desde 1997: 3274.</p>
                         </div>
                     </div>
                 </div>
@@ -319,7 +340,8 @@
                         </div>
 
                         <div class="oc-info-box__text oc-box-gray p-3">
-                            <p>2020: millones de barriles (mb) exportados: 133.6. Cantidad exportada desde 1997: 2261.</p>
+                            <p>2020: millones de barriles (mb) exportados: 133.6. Cantidad exportada desde 1997: 2261.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -346,11 +368,14 @@
     <div class="container">
         <div class="row align-items-end justify-content-between">
             <div class="col-12 col-md-6 oc-padding-title" data-aos="fade-right" data-aos-duration="1000">
-                <img src="img/44-icon_ocenza_terminal_covenas_estadisticas.svg" alt="" class="oc-icon-section" data-aos="zoom-in" data-aos-duration="2000">
+                <img src="img/44-icon_ocenza_terminal_covenas_estadisticas.svg" alt="" class="oc-icon-section"
+                    data-aos="zoom-in" data-aos-duration="2000">
                 <h2 class="mt-4 oc-subtitle line-yellow oc-line-title">Cifras de la <br> terminal en 2020</h2>
             </div>
             <div class="col-12 col-md-5 position-relative" data-aos="fade-left" data-aos-duration="1000">
-                <p class="oc-text-color-dark">Como hemos dicho, este puerto ubicado en el kilómetro 836 de nuestra tubería, es fundamental para la economía nacional. A continuación, algunas cifras y datos que nos ayudan a comprender mejor su importancia.</p>
+                <p class="oc-text-color-dark">Como hemos dicho, este puerto ubicado en el kilómetro 836 de nuestra
+                    tubería, es fundamental para la economía nacional. A continuación, algunas cifras y datos que nos
+                    ayudan a comprender mejor su importancia.</p>
             </div>
         </div>
     </div>
@@ -460,8 +485,8 @@
             <div class="oc-col-full oc-bg-gray">
                 <h3 class="oc-title-style-2">Exportaciones a <br>Asia</h3>
 
-                <div class="oc-card-numbers d-flex mt-4 mb-5">
-                    <div class="oc-card-numbers__item p-4 px-5 scrollbar scrollbar-vertical">
+                <div class="oc-card-numbers d-flex mt-4 mb-5 scrollbar scrollbar-vertical">
+                    <div class="oc-card-numbers__item p-4 px-5">
                         <h5 class="oc-card-numbers__item__title text-center">DESTINO</h5>
                         <ul class="oc-card-numbers__item__list nav flex-column">
                             <li class="nav-item">China</li>
@@ -505,8 +530,8 @@
             <div class="oc-col-full oc-bg-gray">
                 <h3 class="oc-title-style-2">Exportaciones a <br>Europa</h3>
 
-                <div class="oc-card-numbers d-flex mt-4 mb-5">
-                    <div class="oc-card-numbers__item p-4 px-5 scrollbar scrollbar-vertical">
+                <div class="oc-card-numbers d-flex mt-4 mb-5 scrollbar scrollbar-vertical">
+                    <div class="oc-card-numbers__item p-4 px-5">
                         <h5 class="oc-card-numbers__item__title text-center">DESTINO</h5>
                         <ul class="oc-card-numbers__item__list nav flex-column">
                             <li class="nav-item">España</li>
@@ -616,9 +641,7 @@
                 <div class="d-flex align-items-center mb-4 justify-content-between oc-footer__menus">
                     <ul class="nav nav-social">
                         <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_1_facebook.svg" alt=""></a></li>
-                        <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_2_instagram.svg" alt=""></a></li>
                         <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_3_youtube.svg" alt=""></a></li>
-                        <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_4_twitter.svg" alt=""></a></li>
                     </ul>
 
                     <ul class="nav nav-secondary justify-content-between">

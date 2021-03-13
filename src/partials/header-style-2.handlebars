@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{title}}</title>
+</head>
+
+<body class="page-{{body-class}} body-header-style-2">
+    {{!-- Ancla --}}
+    <div id="top"></div>
+    <!-- Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog pt-5">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form action="" class="justify-content-end d-flex">
+                        <input type="text" placeholder="Buscar" class="form-control oc-input-search"
+                            style="background-image: url('img/icon_menu_buscador_1.svg');">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Buscar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="oc-mast-header" id="mast-header">
+        {{>top-header}}
+
+        <div class="oc-menu-lateral scrollbar-vertical scrollbar" id="menu-lateral">
+            <nav>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a href="#" class="nav-link">Nuestra compañía</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Nuestra actividad</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Accionistas e inversionistas</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Ética y cumplimiento</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Compromiso con el ciudadano</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Trabaje con nosotros</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contáctenos</a></li>
+                </ul>
+
+                <ul class="social-nav">
+                    <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_1_facebook.svg"
+                                alt=""></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_2_instagram.svg"
+                                alt=""></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_3_youtube.svg"
+                                alt=""></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><img src="img/icon_footer_4_twitter.svg"
+                                alt=""></a></li>
+                </ul>
+
+                <ul class="nav flex-column nav-secondary">
+                    <li class="nav-item"><a href="#" class="nav-link">Mapa del sitio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Términos y condiciones</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Política de protección de datos</a></li>
+                </ul>
+
+                <img src="img/logo_ocensa_logosimbolo.png" alt="" class="oc-menu-lateral__isotipo px-3 my-4">
+            </nav>
+        </div>
+    </div>

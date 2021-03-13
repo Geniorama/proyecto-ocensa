@@ -43,6 +43,24 @@ module.exports = {
             template: './src/tlu2.handlebars',
             minify: false
         }),
+        
+        new HtmlWebpackPlugin({
+            filename: 'integridad.html',
+            template: './src/integridad.handlebars',
+            minify: false
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: 'mangueras.html',
+            template: './src/mangueras.handlebars',
+            minify: false
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: 'archive-news.html',
+            template: './src/archive-news.handlebars',
+            minify: false
+        }),
 
         // CSS
         new MiniCssExtractPlugin({

@@ -13,9 +13,13 @@
         color: #ffffff
         font-size: 80px
         font-family: 'roboto-bold'
+    .slick-dots
+        margin-top: -60px
+        z-index: 3
+        position: relative
 // Section 01 Home
 .oc-sec-01
-    margin-top: 5em
+    margin-top: 7em
     &__desc
         color: $t-co
 
@@ -549,6 +553,12 @@
             align-items: center
         &__text
             height: 65%
+
+#oc-hitos
+    .slick-oc__terminal
+        .nav-arrow
+            &.slick-disabled
+                opacity: .3
 
 //Responsive
 @media (min-width: 480px) and ( max-width: 769px)

@@ -153,6 +153,45 @@ import "./img/icono-hitos-08.svg";
 import "./img/icono-hitos-09.svg";
 import "./img/pictograma_home_concha.svg";
 
+import "./img/in-imag_1.jpg";
+import "./img/icon_introduccion_integridad_conport.svg";
+import "./img/imag_4_integridad_3_tecnologia_desktop.jpg";
+import "./img/icon_integridad_rol_integridad_conport.svg";
+import "./img/imag_4_integridad_2_integridad_rol_desktop.jpg";
+import "./img/in-imag_4.jpg";
+import "./img/pictograma_ocensa_conport_integridad.svg";
+import "./img/icon_herramienta_anomalias_integridad_conport.svg";
+import "./img/icon_herramienta_intervenciones_integridad_conport.svg";
+import "./img/icon_herramienta_inspeccion_integridad_conport.svg";
+import "./img/icon_herramienta_ciclos_integridad_conport.svg";
+import "./img/icon_herramienta_caminatas_integridad_conport.svg";
+import "./img/left-arrow.svg";
+import "./img/right-arrow.svg";
+
+
+import "./img/icon_boyancia_mangueras_conport.svg";
+import "./img/imag_5_mangueras_1_mangueras_flexibles_desktop.jpg";
+import "./img/imag_5_mangueras_2_fundamentales_desktop.jpg";
+import "./img/icon_mantenimiento_mangueras_conport.svg";
+import "./img/icon_inspección_mangueras_conport.svg";
+import "./img/icon_manguera_servicio_mangueras_conport.svg";
+import "./img/icon_estandares_mangueras_conport.svg";
+import "./img/icon_boyancia_mangueras_conport.svg";
+import "./img/imag_5_mangueras_2_fundamentales_mobile.jpg";
+import "./img/icon_mangueras_flexibles_mangueras_conport.svg";
+import "./img/icon_fundamentales_mangueras_conport.svg";
+import "./img/imag_5_mangueras_1_mangueras_flexibles_mobile.jpg";
+import "./img/imag_1_mobiles.jpg";
+import "./img/slide-2.jpg";
+import "./img/pictograma_ocensa_conport_mangueras.svg";
+import "./img/icono-noticias.svg";
+import "./img/arrow-news.svg";
+import "./img/02-icon_ocensa_home_noticias.svg";
+import "./img/06-icon_ocenza_integridad_geotubo.svg";
+import "./img/icono-ver-menos.svg";
+
+// Videos
+import "./videos/mangueras-ocensa.mp4";
 
 AOS.init();
 menuToggle();
@@ -194,7 +233,7 @@ $(function() {
         breakpoint: 769,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 2
+          slidesToScroll: 1
         }
       },
       {
@@ -213,14 +252,14 @@ $(function() {
     nextArrow: `<button class='nav-arrow nav-right'><img src=${ArrowRight}></button>`,
     slidesToShow: 3,
     slidesToScroll: 3,
+    dots: true,
+    infinite: false,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-          infinite: true,
-          dots: true
         }
       },
       {
@@ -234,8 +273,7 @@ $(function() {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: false
+          slidesToScroll: 1
         }
       }
     ]
@@ -268,6 +306,39 @@ $(function() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
+  $('.slick-oc__mangueras').slick({
+    prevArrow: `<button class='nav-arrow nav-left'><img src=${ArrowLeft}></button>`,
+    nextArrow: `<button class='nav-arrow nav-right'><img src=${ArrowRight}></button>`,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          infinite: true
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: false
         }
       }
     ]
@@ -316,6 +387,20 @@ $(function() {
   // Toggle
   $('.oc-info__tooltip').tooltip();
 
+
+  $('#btn-toggle-list').click(function(e) {
+      e.preventDefault();
+      $('#mangueras-list-2').slideToggle('fast', function() {
+        if ($('#mangueras-list-2').css('display') == 'none') {
+          $('#btn-toggle-list span').text('Ver más');
+          $('#btn-toggle-list img').attr('src', 'img/plus_1.svg');
+        }
+        else {
+            $('#btn-toggle-list span').text('Ver menos');
+            $('#btn-toggle-list img').attr('src', 'img/icono-ver-menos.svg');
+        }
+      });
+  })  
   // Modal infografía
   $('.oc-info__modal').modal({
     show: false,
