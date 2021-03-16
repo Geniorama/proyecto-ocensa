@@ -190,6 +190,10 @@ import "./img/02-icon_ocensa_home_noticias.svg";
 import "./img/06-icon_ocenza_integridad_geotubo.svg";
 import "./img/icono-ver-menos.svg";
 
+import "./img/imagen-slide1.jpg";
+import "./img/imagen-slide2.jpg";
+import "./img/imagen-slide3.jpg";
+
 // Videos
 import "./videos/mangueras-ocensa.mp4";
 
