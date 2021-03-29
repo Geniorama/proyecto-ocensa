@@ -277,6 +277,9 @@
 
 // Section 07 Home
 .oc-info
+    overflow: scroll
+    &::-webkit-scrollbar
+        height: 10px
     &__title
         color: $secondary
         position: relative
@@ -289,10 +292,9 @@
             width: 80px
             background-color: $primary
     &__cont-info
-        overflow: scroll
         position: relative
-        &::-webkit-scrollbar
-            height: 10px
+        width: 2065px
+        margin: auto
     &__img
         height: 500px
         width: auto
