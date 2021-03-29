@@ -195,6 +195,14 @@ import "./img/imagen-slide2.jpg";
 import "./img/imagen-slide3.jpg";
 import "./img/icon_diccionario_conport.svg";
 import "./img/hawser.jpg";
+import "./img/PLEM.jpeg";
+import "./img/Brida.png";
+import "./img/Monoboya.jpeg";
+import "./img/Manifold.jpg";
+import "./img/tlu.jpeg";
+import "./img/vlcc.jpeg";
+import "./img/dwt.jpg";
+import "./img/nudos.png";
 
 // Videos
 import "./videos/mangueras-ocensa.mp4";
