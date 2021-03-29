@@ -195,7 +195,7 @@
     &__img
         width: 100%
         padding: 0 1em
-        margin-bottom: .5em 
+        margin-bottom: .5em
     &__desc
         padding: 0 1em
         margin-bottom: 1em
@@ -435,7 +435,7 @@
         margin-bottom: 0
     &__line
         margin: .5em 0 !important
-    
+
 // Section timeline
 .oc-time__func
     z-index: 2
@@ -507,7 +507,7 @@
                 font-size: 1em
             &__number
                 font-size: 2.5em
-                
+
         span
             color: $secondary
 
@@ -558,7 +558,7 @@
         margin-bottom: 0
     .oc-info-box
         height: 530px
-        &__icon
+        &__img
             height: 35%
             display: flex
             align-items: center
@@ -566,6 +566,35 @@
             height: 65%
 
 #oc-hitos
+    .slick-oc__terminal
+        .nav-arrow
+            &.slick-disabled
+                opacity: .3
+
+//Home diccionario
+.oc-dictionary
+    padding-bottom: 6em
+    &__cont-1
+        padding-left: 6em
+        margin-bottom: 4em
+    &__date, &__title
+        color: $secondary
+        font-weight: bold
+    &__title
+        margin-bottom: 0
+    .oc-info-box
+        height: 500px
+        &__img
+            object-fit: cover
+            height: 50%
+            display: flex
+            align-items: center
+            img
+                height: 100%
+        &__text
+            height: 50%
+
+#oc-dictionary
     .slick-oc__terminal
         .nav-arrow
             &.slick-disabled
@@ -583,7 +612,7 @@
                 padding: 2em
     .padding-section
         padding: 2em 0
-    
+
     .oc-retos
         &__cont-2
             padding: 0 2em
@@ -604,7 +633,7 @@
     .oc-info
         &__cont-title
             margin-top: 50px
-    
+
 @media (max-width: 480px)
     .oc-intro
         &__car-item
@@ -716,7 +745,6 @@
     span
         font-family: 'roboto-bold'
         color: $secondary
-    
 
 @keyframes deslice
     0%

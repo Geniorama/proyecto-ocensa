@@ -193,6 +193,8 @@ import "./img/icono-ver-menos.svg";
 import "./img/imagen-slide1.jpg";
 import "./img/imagen-slide2.jpg";
 import "./img/imagen-slide3.jpg";
+import "./img/icon_diccionario_conport.svg";
+import "./img/hawser.jpg";
 
 // Videos
 import "./videos/mangueras-ocensa.mp4";
