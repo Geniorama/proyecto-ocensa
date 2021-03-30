@@ -601,6 +601,10 @@
         .nav-arrow
             &.slick-disabled
                 opacity: .3
+            &.nav-left
+                left: -40px
+            &.nav-right
+                right: -40px
 
 //Responsive
 @media (min-width: 480px) and ( max-width: 769px)
@@ -747,6 +751,16 @@
     span
         font-family: 'roboto-bold'
         color: $secondary
+
+#oc-dictionary
+    .slick-oc__terminal
+        .nav-arrow
+            top: unset
+            bottom: -30px
+            &.nav-left
+                left: 0px
+            &.nav-right
+                right: 0px
 
 @keyframes deslice
     0%
